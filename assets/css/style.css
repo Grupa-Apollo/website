@@ -13,23 +13,26 @@ hr {
     content: '';
     width: 70%;
     height: 5px;
-    background: #0e153a;
+    background: #132845;
     margin: 0 auto;
 }
 
 #nav-bar {
-    /* position: sticky;
+   /* position: sticky;
     top:0;
     z-index: 10;
     padding: 0; */
-    background: #0e153a;
+    background: #1A73E8;
 }
 
 .navbar-nav .active:hover {
-    color: #e2f3f5;
-    background: #3d5af1;
-    transition: 0.5s ease-out;
+    background: #132845;
+    color: #fff;
+    border-radius: 5%;
+    transition: .5s;
 }
+
+.navbar-nav 
 
 #nav-bar i {
     color: #1A73E8;
@@ -44,29 +47,24 @@ hr {
 .top-section .navbar-brand {
     font-weight: 900;
     font-size: 30px;
-    color: #e2f3f5;
+    color: #fff;
     text-transform: uppercase;
     padding-left: 20px;
 }
 
-.top-section .navbar-brand:hover{
-    color: #e2f3f5;
-}
-
 .navbar-nav li {
-  /* padding: 0 27px; */
-  margin-left: 90px;
+  padding: 0 20px;
+  margin-left: 28px;
 }
 
 .navbar-nav li a {
-    color: #e2f3f5 !important;
+    color: #fff !important;
     font-weight: 600;
     
 }
 
 .top-section button {
-    background: #3d5af1;
-    color: #e2f3f5;
+    background: #132845;
     font-size: 25px;
 }
 
@@ -75,20 +73,18 @@ hr {
     font-size: 60px;
     margin-top: 100px;
     font-weight: 900;
-    color: #3d5af1;
+    color: #FFF;
+}
+
+.legal-title {
+    font-size: 50px;
+    margin-top: 100px;
+    font-weight: 700;
+    color: #FFF;
 }
 
 #banner {
-    background: #e2f3f5;
-}
-#banner .banner-para-1 {
-    font-size: 18px;
-    font-weight: 600;
-    padding-bottom: 15px;
-}
-
-#banner .banner-para-2 {
- font-weight: 400;
+    background: #1A73E8;
 }
 
 #banner img {
@@ -99,24 +95,21 @@ hr {
 }
 
 #banner p {
-    color: #0e153a;
+    color: #fff;
 }
 
 #banner span {
-    color: #0e153a;
+    color: #132845;
 }
 
 #team {
     padding: 100px 0;
 }
 
-#team .team-title {
-    color: #0e153a;
-}
 
 .team-title::before {
     content: '';
-    background: #3d5af1;
+    background: #1A73E8;
     height: 5px;
     width: 200px;
     margin:0 auto;
@@ -127,7 +120,7 @@ hr {
 
 .team-title::after {
     content: '';
-    background: #22d1ee;
+    background: #132845;
     height: 10px;
     width: 50px;
     margin:0 auto;
@@ -137,9 +130,13 @@ hr {
 }
 
 .team-members {
-        border-left: 4px solid #3d5af1;
+       /* border-left: 4px solid #132845;*/
         margin-top: 50px;
         margin-bottom: 50px;   
+}
+
+.team-border {
+        border-left: 4px solid #132845;   
 }
 
 .team-members img {
@@ -156,26 +153,33 @@ hr {
 
 #feature {
     padding: 70px 0;
-    background: #e2f3f5;
-}
-#feature h1 {
-    color: #0e153a;
-    font-size: 36px;
+    background: #1A73E8;
+    color: #fff;
+
 }
 
 #feature .card-header {
+    color: #e2f3f5;
     font-size: 20px;
+    font-weight: 700;
+    background: #132845;
+    padding: 0.75rem;
 }
 
 .card {
-    background: #0e153a;
-    /* border: 1px solid #22d1ee; */
-    margin: 0 auto;
+	width: 22rem;
+    margin: auto auto;
+	border-radius: 6px;
+	text-align: center;
+	/*overflow: hidden;*/
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	padding: 0.5rem;
 }
 
 
 .card .list-group {
-    color: #e2f3f5;
+    color: #132845;
 }
 
 .card ul li {
@@ -186,6 +190,19 @@ hr {
     font-size: 14px;
 }
 
+.card-text {
+    font-size: 13px;
+}
+
+.device-card {
+  padding: 0.75rem;
+}
+
+.card:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
+}
+
+
 #download {
     padding: 50px 0px;
     margin-bottom: 25px;
@@ -195,13 +212,14 @@ hr {
     text-decoration: none;
     
 }
+
 #download img {
     height: 400px;
     width: 600px;
     display: cover;
 }
 #download .download-title {
-    margin-top: 180px;
+    margin-top: 90px;
 }
 
 #download h1 {
@@ -209,45 +227,59 @@ hr {
     text-align: center;
     margin: 20px 0;
     text-transform: uppercase;
-    color: #0e153a;
+    color: #132845;
 }
-
-
 
 .btn a {
     color: #3d5af1;
 }
 
 .btn:hover {
-    background: #0e153a;
+    background: #132845;
+    color: #e2f3f5;
     border:1px solid #0e153a;
 }
 .btn-outline-primary {
     border: 1px solid #3d5af1;
 }
 
-
 #about {
-    padding: 100px 10px;
+    padding: 50px 10px;
 }
 
 #about h2 {
     font-size: 30px;
-    color: #3d5af1;
+    color: #1A73E8;
 }
 #about i {
-    color: #0e153a;
+    color: #132845;
 }
 
 #about h1 {
     text-align: center;
     margin-bottom: 60px;
-    color: #0e153a;
+}
+
+#legal {
+    padding: 50px 10px;
+}
+
+#legal h2 {
+    font-size: 30px;
+    color: #1A73E8;
+}
+#legal i {
+    color: #132845;
+}
+
+#legal h1 {
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .about-title::before {
     content: '';
-    background: #3d5af1;
+    background: #1A73E8;
     height: 5px;
     width: 200px;
     margin:0 auto;
@@ -258,7 +290,7 @@ hr {
 
 .about-title::after {
     content: '';
-    background: #22d1ee;
+    background: #132845;
     height: 10px;
     width: 50px;
     margin:0 auto;
@@ -282,7 +314,7 @@ hr {
 
 .social-title::before {
     content: '';
-    background: #3d5af1;
+    background: #1A73E8;
     height: 5px;
     width: 200px;
     margin:0 auto;
@@ -293,7 +325,7 @@ hr {
 
 .social-title::after {
     content: '';
-    background: #22d1ee;
+    background: #132845;
     height: 10px;
     width: 50px;
     margin:0 auto;
@@ -320,55 +352,41 @@ hr {
     color: #000;
 }
 
+#social-media .fa-telegram {
+    color: #3dc9e3;
+}
+
 #social-media .fa-paypal {
     color: #032f86;
 }
 
 #footer {
     background: black;
-    color: #e2f3f5;
+    color: #fff;
     line-height: 7vh;
     margin-bottom: 0;
 }
 
-
-  .swiper-container {
+.swiper-container {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-  .swiper-slide {
+}
+.swiper-slide {
     background-position: center;
     background-size: cover;
     width: 250px;
     height: 540px;
-  }
+}
 
-  .swiper-slide .img-box {
+.swiper-slide .img-box {
       width: 100%;
       height: 650px;
       overflow: hidden;
-  }
+}
 
-  .swiper-slide .img-box img {
+.swiper-slide .img-box img {
       width: 100%;
-  }
-  
-  .cards {
-  border-radius: 2px;
-  margin: 0.4rem;
-  text-align: center;
-  overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.device-card {
-  padding: 0.2rem;
-}
-
-.card:hover {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
 }
 
 /* Back to top button */
