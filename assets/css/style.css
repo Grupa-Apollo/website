@@ -18,10 +18,10 @@ hr {
 }
 
 #nav-bar {
-   /* position: sticky;
+    position: sticky;
     top:0;
     z-index: 10;
-    padding: 0; */
+    padding: 0;
     background: #1A73E8;
 }
 
