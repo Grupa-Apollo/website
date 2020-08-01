@@ -89,7 +89,8 @@ hr {
 #banner img {
     height: 600px;
     display: cover;
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     /* margin-right: 100px; */
 }
 
