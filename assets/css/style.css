@@ -158,7 +158,7 @@ hr {
 }
 
 #feature .card-header {
-    color: #e2f3f5;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 700;
     background: #132845;
@@ -235,7 +235,7 @@ hr {
 
 .btn:hover {
     background: #132845;
-    color: #e2f3f5;
+    color: #ffffff;
     border:1px solid #0e153a;
 }
 .btn-outline-primary {
@@ -302,7 +302,7 @@ hr {
 #social-media {
     padding: 40px 0;
     /* margin-bottom: 25px; */
-    background: #e2f3f5;
+    background: #ffffff;
 }
 
 #social-media p {
