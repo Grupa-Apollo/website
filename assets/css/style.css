@@ -51,7 +51,6 @@ hr {
 
 .navbar-nav li {
     padding: 0 20px;
-    margin-left: 28px;
 }
 
 .navbar-nav li a {
@@ -99,10 +98,12 @@ hr {
 }
 
 #team {
-    padding: 100px 0;
+    background: #1A73E8;
+    color: white;
+    padding: 50px 0;
 }
 
-.team-title::before {
+.section-title::before {
     content: '';
     background: #1A73E8;
     height: 5px;
@@ -112,7 +113,7 @@ hr {
     transform: translateY(63px);
 }
 
-.team-title::after {
+.section-title::after {
     content: '';
     background: #132845;
     height: 10px;
@@ -137,12 +138,16 @@ hr {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    margin: 0 10px;
+    margin: 0 20px 30px;
 }
 
 .user-details {
     display: inline-block;
-    font-size: 12px;
+    font-size: 20px;
+}
+
+#screenshots {
+    padding: 50px 0;
 }
 
 #features {
