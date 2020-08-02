@@ -1,13 +1,12 @@
-*  {
+* {
     box-sizing: border-box;
 }
 
 html, body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background: #fff;
+    background: white;
 }
-
 
 hr {
     content: '';
@@ -27,7 +26,7 @@ hr {
 
 .navbar-nav .active:hover {
     background: #132845;
-    color: #fff;
+    color: white;
     border-radius: 5%;
     transition: .5s;
 }
@@ -37,29 +36,27 @@ hr {
 #nav-bar i {
     color: #1A73E8;
     font-size: 25px;
-    
 }
 
 .fa-bars:before {
-    color: #fff;
+    color: white;
 }
 
 .top-section .navbar-brand {
     font-weight: 700;
     font-size: 30px;
-    color: #fff;
+    color: white;
     padding-left: 10px;
 }
 
 .navbar-nav li {
-  padding: 0 20px;
-  margin-left: 28px;
+    padding: 0 20px;
+    margin-left: 28px;
 }
 
 .navbar-nav li a {
-    color: #fff !important;
+    color: white !important;
     font-weight: 600;
-    
 }
 
 .top-section button {
@@ -67,19 +64,18 @@ hr {
     font-size: 25px;
 }
 
-
 .main-title {
     font-size: 60px;
     margin-top: 100px;
     font-weight: 700;
-    color: #FFF;
+    color: white;
 }
 
 .legal-title {
     font-size: 50px;
     margin-top: 100px;
     font-weight: 700;
-    color: #FFF;
+    color: white;
 }
 
 #banner {
@@ -95,7 +91,7 @@ hr {
 }
 
 #banner p {
-    color: #fff;
+    color: white;
 }
 
 #banner span {
@@ -106,7 +102,6 @@ hr {
     padding: 100px 0;
 }
 
-
 .team-title::before {
     content: '';
     background: #1A73E8;
@@ -116,7 +111,6 @@ hr {
     display: block;
     transform: translateY(63px);
 }
-
 
 .team-title::after {
     content: '';
@@ -130,13 +124,13 @@ hr {
 }
 
 .team-members {
-       /* border-left: 4px solid #132845;*/
-        margin-top: 50px;
-        margin-bottom: 50px;   
+    /* border-left: 4px solid #132845;*/
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .team-border {
-        border-left: 4px solid #132845;   
+    border-left: 4px solid #132845;
 }
 
 .team-members img {
@@ -151,15 +145,14 @@ hr {
     font-size: 12px;
 }
 
-#feature {
+#features {
     padding: 70px 0;
     background: #1A73E8;
-    color: #fff;
-
+    color: white;
 }
 
-#feature .card-header {
-    color: #ffffff;
+#features .card-header {
+    color: white;
     font-size: 20px;
     font-weight: 700;
     background: #132845;
@@ -167,14 +160,14 @@ hr {
 }
 
 .card {
-	width: 22rem;
+    width: 22rem;
     margin: auto auto;
-	border-radius: 6px;
-	text-align: center;
+    border-radius: 6px;
+    text-align: center;
 	/*overflow: hidden;*/
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-	padding: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 0.5rem;
 }
 
 .card-title {
@@ -187,13 +180,12 @@ hr {
 }
 
 .device-card {
-  padding: 0.75rem;
+    padding: 0.75rem;
 }
 
 .card:hover {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
 }
-
 
 #download {
     padding: 50px 0px;
@@ -202,7 +194,6 @@ hr {
 
 #download a {
     text-decoration: none;
-    
 }
 
 #download img {
@@ -210,6 +201,7 @@ hr {
     width: 600px;
     display: cover;
 }
+
 #download .download-title {
     margin-top: 90px;
 }
@@ -228,7 +220,7 @@ hr {
 
 .btn:hover {
     background: #132845;
-    color: #ffffff;
+    color: white;
     border:1px solid #0e153a;
 }
 .btn-outline-primary {
@@ -279,7 +271,6 @@ hr {
     transform: translateY(63px);
 }
 
-
 .about-title::after {
     content: '';
     background: #132845;
@@ -291,11 +282,10 @@ hr {
     transform: translateY(8px);
 }
 
-
 #social-media {
     padding: 40px 0;
     /* margin-bottom: 25px; */
-    background: #ffffff;
+    background: white;
 }
 
 #social-media p {
@@ -314,7 +304,6 @@ hr {
     transform: translateY(63px);
 }
 
-
 .social-title::after {
     content: '';
     background: #132845;
@@ -325,7 +314,6 @@ hr {
     display: block;
     transform: translateY(2px);
 }
-
 
 #social-media i {
     font-size:70px;
@@ -345,7 +333,7 @@ hr {
 }
 
 #social-media .fa-telegram {
-    color: #3dc9e3;
+    color: #0088cc;
 }
 
 #social-media .fa-paypal {
@@ -354,7 +342,7 @@ hr {
 
 #footer {
     background: black;
-    color: #fff;
+    color: white;
     line-height: 7vh;
     margin-bottom: 0;
 }
@@ -364,6 +352,7 @@ hr {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .swiper-slide {
     background-position: center;
     background-size: cover;
@@ -372,33 +361,32 @@ hr {
 }
 
 .swiper-slide .img-box {
-      width: 100%;
-      height: 650px;
-      overflow: hidden;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
 }
 
 .swiper-slide .img-box img {
-      width: 100%;
+    width: 100%;
 }
 
-/* Back to top button */
-
 #back-to-top {
-  display: none;
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  z-index: 99;
-  font-size: 15px;
-  border: none;
-  outline: none;
-  background-color: #1a73e8;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 20px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #1a73e8;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 24px;
 }
 
 #back-to-top:hover {
-  background-color: #263238;
+    background-color: white;
+    color: #1a73e8;
 }
