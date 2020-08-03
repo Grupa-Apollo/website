@@ -135,8 +135,8 @@ hr {
 }
 
 .team-members img {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     margin: 0 20px 30px;
 }
@@ -176,12 +176,12 @@ hr {
 }
 
 .card-title {
-    color: #1A73E8;
+    color: black;
 }
 
 .card-text {
     font-size: 13px;
-    color: #132845;
+    color: #767676;
 }
 
 .device-card {
