@@ -206,24 +206,22 @@ hr {
 }
 
 #download h1 {
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
     margin: 20px 0;
     text-transform: uppercase;
     color: #132845;
 }
 
-.btn a {
-    color: #3d5af1;
+.btn {
+    background: white;
+    color: #1A73E8;
+    border:1px solid #1A73E8;    
 }
 
 .btn:hover {
-    background: #132845;
+    background: #1A73E8;
     color: white;
-    border:1px solid #0e153a;
-}
-.btn-outline-primary {
-    border: 1px solid #3d5af1;
 }
 
 #legal {
