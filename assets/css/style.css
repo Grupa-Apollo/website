@@ -25,9 +25,9 @@ hr {
 }
 
 .navbar-nav .active:hover {
-    background: #132845;
-    color: white;
-    border-radius: 5%;
+    background: white;
+    color: #1A73E8 !important;
+    border-radius: 0%;
     transition: .5s;
 }
 
