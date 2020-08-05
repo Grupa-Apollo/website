@@ -58,6 +58,11 @@ hr {
     font-weight: 600;
 }
 
+.dropdown-item:hover {
+	background: white;
+	color: #1A73E8 !important;
+}
+
 .top-section button {
     background: #132845;
     font-size: 25px;
