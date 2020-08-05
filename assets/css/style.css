@@ -105,7 +105,8 @@ hr {
 #team {
     background: #1A73E8;
     color: white;
-    padding: 50px 0;
+    padding: 30px 0;
+    padding-bottom: 60px;
 }
 
 .section-title::before {
@@ -152,13 +153,13 @@ hr {
 }
 
 #screenshots {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 #features {
-    padding: 70px 0;
     background: #1A73E8;
     color: white;
+    padding: 30px 0;
 }
 
 .card {
@@ -268,8 +269,7 @@ hr {
 }
 
 #social-media {
-    padding: 40px 0;
-    /* margin-bottom: 25px; */
+    padding: 30px 0;
     background: white;
 }
 
@@ -334,7 +334,6 @@ hr {
 
 .swiper-container {
     width: 100%;
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
