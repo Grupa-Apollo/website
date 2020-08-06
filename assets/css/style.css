@@ -348,13 +348,13 @@ hr {
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 250px;
-    height: 540px;
+    width: 210px;
+    height: 455px;
 }
 
 .swiper-slide .img-box {
     width: 100%;
-    height: 650px;
+    height: 520px;
     overflow: hidden;
 }
 

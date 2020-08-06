@@ -3,6 +3,11 @@ var swiper = new Swiper(".swiper-container", {
                 grabCursor: true,
                 centeredSlides: true,
                 slidesPerView: "auto",
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
                 coverflowEffect: {
                     rotate: 0,
                     stretch: 0,
@@ -12,5 +17,6 @@ var swiper = new Swiper(".swiper-container", {
                 },
                 pagination: {
                     el: ".swiper-pagination",
+                    dynamicBullets: true,
                 },
             });			
