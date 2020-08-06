@@ -29,11 +29,9 @@ hr {
 .navbar-nav .active:hover {
     background: white;
     color: #1A73E8 !important;
-    padding: 9px 15px;
     border-radius: 28px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    transition: .5s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
 }
 
 .navbar-nav 
