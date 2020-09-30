@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background: white;
@@ -20,7 +21,7 @@ hr {
 #nav-bar {
     position: sticky;
     position: -webkit-sticky;
-    top:0;
+    top: 0;
     z-index: 10;
     padding: 0;
     background: #1A73E8;
@@ -35,14 +36,14 @@ hr {
 }
 
 @media only screen and (max-width: 991px) {
-	.navbar-nav .active:hover {
-		background: white;
-		color: #1A73E8 !important;
-		padding: 9px 15px;
-		border-radius: 28px;
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-	}
+    .navbar-nav .active:hover {
+        background: white;
+        color: #1A73E8 !important;
+        padding: 9px 15px;
+        border-radius: 28px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+    }
 }
 
 #nav-bar i {
@@ -71,8 +72,8 @@ hr {
 }
 
 .dropdown-item:hover {
-	background: white;
-	color: #1A73E8 !important;
+    background: white;
+    color: #1A73E8 !important;
 }
 
 .top-section button {
@@ -95,7 +96,7 @@ hr {
 }
 
 .scroll-margin {
-	   scroll-margin-top: 4rem;
+    scroll-margin-top: 4rem;
 }
 
 #banner {
@@ -130,7 +131,7 @@ hr {
     background: #1A73E8;
     height: 5px;
     width: 200px;
-    margin:0 auto;
+    margin: 0 auto;
     display: block;
     transform: translateY(63px);
 }
@@ -140,7 +141,7 @@ hr {
     background: #132845;
     height: 10px;
     width: 50px;
-    margin:0 auto;
+    margin: 0 auto;
     margin-bottom: 40px;
     display: block;
     transform: translateY(8px);
@@ -239,7 +240,7 @@ hr {
 .btn {
     background: white;
     color: #1A73E8;
-    border:1px solid #1A73E8;    
+    border: 1px solid #1A73E8;
 }
 
 .btn:hover {
@@ -255,6 +256,7 @@ hr {
     font-size: 30px;
     color: #1A73E8;
 }
+
 #legal i {
     color: #132845;
 }
@@ -269,7 +271,7 @@ hr {
     background: #132845;
     height: 5px;
     width: 200px;
-    margin:0 auto;
+    margin: 0 auto;
     display: block;
     transform: translateY(63px);
 }
@@ -279,7 +281,7 @@ hr {
     background: white;
     height: 10px;
     width: 50px;
-    margin:0 auto;
+    margin: 0 auto;
     margin-bottom: 40px;
     display: block;
     transform: translateY(8px);
@@ -301,7 +303,7 @@ hr {
     background: #1A73E8;
     height: 5px;
     width: 200px;
-    margin:0 auto;
+    margin: 0 auto;
     display: block;
     transform: translateY(63px);
 }
@@ -311,14 +313,14 @@ hr {
     background: #132845;
     height: 10px;
     width: 50px;
-    margin:0 auto;
+    margin: 0 auto;
     margin-bottom: 45px;
     display: block;
     transform: translateY(2px);
 }
 
 #social-media i {
-    font-size:70px;
+    font-size: 70px;
     transition: 0.5s;
 }
 
@@ -355,10 +357,10 @@ hr {
 }
 
 @media only screen and (max-width: 991px) {
-	.swiper-container {
-		width: 100%;
-		padding-bottom: 50px;
-	}
+    .swiper-container {
+        width: 100%;
+        padding-bottom: 50px;
+    }
 }
 
 .swiper-slide {
@@ -405,18 +407,18 @@ hr {
 }
 
 .modal.modal-fullscreen .modal-dialog {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  max-width: none; 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: none;
 }
 
 .modal.modal-fullscreen .modal-content {
-  height: auto;
-  min-height: 100%;
-  border-radius: 0;
-  border: none; 
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+    border: none;
 }
 
 #loader-wrapper {
@@ -426,8 +428,9 @@ hr {
     width: 100%;
     height: 100%;
     z-index: 1000;
-  }
-  #loader {
+}
+
+#loader {
     display: block;
     position: relative;
     top: 50%;
@@ -441,8 +444,9 @@ hr {
     -webkit-animation: spin 4s linear infinite;
     animation: spin 4s linear infinite;
     z-index: 1001;
-  }
-  #loader:before {
+}
+
+#loader:before {
     content: "";
     position: absolute;
     top: 5px;
@@ -454,8 +458,9 @@ hr {
     border-radius: 100%;
     -webkit-animation: spin 6s linear infinite;
     animation: spin 6s linear infinite;
-  }
-  #loader:after {
+}
+
+#loader:after {
     content: "";
     position: absolute;
     top: 12px;
@@ -467,64 +472,71 @@ hr {
     border-radius: 100%;
     -webkit-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
-  }
-  @-webkit-keyframes spin {
+}
+
+@-webkit-keyframes spin {
     0% {
-      -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-      transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  @keyframes spin {
+}
+
+@keyframes spin {
     0% {
-      -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-      transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  #loader-wrapper .loader-section {
+}
+
+#loader-wrapper .loader-section {
     position: fixed;
     top: 0;
     background: #1a73e8;
     width: 51%;
     height: 100%;
     z-index: 1000;
-  }
-  
-  #loader-wrapper .loader-section.section-left {
+}
+
+#loader-wrapper .loader-section.section-left {
     left: 0;
-  }
-  #loader-wrapper .loader-section.section-right {
+}
+
+#loader-wrapper .loader-section.section-right {
     right: 0;
-  }
-  
-  /* Loaded Styles */
-  .loaded #loader-wrapper .loader-section.section-left {
+}
+
+/* Loaded Styles */
+.loaded #loader-wrapper .loader-section.section-left {
     transform: translateX(-100%);
     transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
-  .loaded #loader-wrapper .loader-section.section-right {
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
     transform: translateX(100%);
     transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
-  .loaded #loader {
+}
+
+.loaded #loader {
     opacity: 0;
     transition: all 0.3s ease-out;
-  }
-  .loaded #loader-wrapper {
+}
+
+.loaded #loader-wrapper {
     visibility: hidden;
     transform: translateY(-100%);
     transition: all 0.3s 1s ease-out;
-  }
-  
+}

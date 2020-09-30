@@ -1,167 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Havoc-OS</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="icon" href="assets/img/favicon.svg">
+    <title>Havoc-OS</title>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="icon" href="assets/img/favicon.svg">
 
-        <!-- animate css  -->
-        <link href="assets/lib/animate_css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-        <!-- google font  -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- animate css  -->
+    <link href="assets/lib/animate_css/animate.min.css" rel="stylesheet">
 
-        <!-- font awesome  -->
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
 
-        <!-- custom css  -->
-        <link rel="stylesheet" href="assets/css/style.css" />
-		
-	<style>
-	    html {
-		scroll-behavior: smooth;
-	    }
-	</style>
-    </head>
+    <!-- font awesome  -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
 
-    <body>
-        <!-- navbar start  -->
-        <section id="nav-bar">
-            <header class="top-section">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/navbar_logo.svg" style="height: 38px; padding-bottom: 4px; margin-right: 10px;">Havoc-OS</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </button>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="download.html">Download</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="pp.html">Privacy Policy</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-        </section>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
 
-        <!-- navbar end  -->
-        <div id="loader-wrapper">
-            <div id="loader"></div>
-            <div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
+<body>
+    <!-- navbar start  -->
+    <section id="nav-bar">
+        <header class="top-section">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar_logo.svg"
+                        style="height: 38px; padding-bottom: 4px; margin-right: 10px;">Havoc-OS</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="download.html">Download</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pp.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <!-- navbar end  -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <!-- banner start  -->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 animate__animated animate__fadeInDown animate__faster animate__delay-1s">
+                    <h1 class="legal-title text-center" style="color: #ffffff;">Terms of Service</br></br></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner end  -->
+
+    <!-- about section start-->
+    <section id="legal">
+        <div class="container">
+            <h2 class="wow animate__fadeIn">DISCLAIMER</h2>
+            <div>
+                <p>All information and files — both in source and compiled
+                    form — are provided on an as is basis. No guarantees or
+                    warranties are given or implied. The user assumes all
+                    risks of any damages that may occur, including but not
+                    limited to loss of data, damages to hardware, or loss
+                    of business profits. Please use at your own risk. Note
+                    that unless explicitly allowed by the warranty covering
+                    your device, it should be assumed that any warranty
+                    accompanying your device will be voided if you tamper
+                    with either the system software or the hardware.</p>
+            </div>
         </div>
 
-        <!-- banner start  -->
-        <section id="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 animate__animated animate__fadeInDown animate__faster animate__delay-1s">
-                        <h1 class="legal-title text-center" style="color: #ffffff;">Terms of Service</br></br></h1>
-                    </div>
+        <div class="container">
+            <h2 class="wow animate__fadeIn">TERMS OF USE</h2>
+            <div>
+                <p>Certain images, logos, pictures, and other works
+                    originating with organizations other than Havoc-OS
+                    may be or are the trademarks and/or servicemarks of
+                    those other organizations and are subject to the laws
+                    of their registered countries. Havoc-OS’ usage
+                    constitutes a ‘fair use’ of any such copyrighted
+                    material as provided for in section 107 of the US
+                    Copyright Law. If you wish to use copyrighted material
+                    from this site for purposes of your own that go
+                    beyond ‘fair use’, you must obtain permission
+                    from the copyright owner. Requests for removal of
+                    copyright material may be sent to </p>
+                <h5 style="color: #1A73E8">anushekprasal@gmail.com</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- social media start -->
+    <section id="social-media">
+        <div class="container">
+            <p class="social-title text-center wow animate__fadeIn">FIND US</p>
+            <div class="row text-center">
+                <div class="col-4 my-3 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <a target="_blank" href="https://github.com/Havoc-OS"><i class="fa fa-github"
+                            aria-hidden="true"></i></a>
+                </div>
+                <div class="col-4 my-3 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <a target="_blank" href="https://t.me/havocofficial"><i class="fa fa-telegram"
+                            aria-hidden="true"></i></a>
+                </div>
+                <div class="col-4 my-3 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <a target="_blank" href="https://paypal.me/ANUSHEK"><i class="fa fa-paypal"
+                            aria-hidden="true"></i></a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- banner end  -->
+    <!-- social media end  -->
 
-        <!-- about section start-->
-        <section id="legal">
-           <div class="container">
-                <h2 class="wow animate__fadeIn">DISCLAIMER</h2>
-                <div>
-                            <p>All information and files — both in source and compiled 
-                            form — are provided on an as is basis. No guarantees or 
-                            warranties are given or implied. The user assumes all 
-                            risks of any damages that may occur, including but not 
-                            limited to loss of data, damages to hardware, or loss 
-                            of business profits. Please use at your own risk. Note 
-                            that unless explicitly allowed by the warranty covering 
-                            your device, it should be assumed that any warranty 
-                            accompanying your device will be voided if you tamper 
-                            with either the system software or the hardware.</p>
-                    </div>
-            </div>
-            
-            <div class="container">
-                <h2 class="wow animate__fadeIn">TERMS OF USE</h2>
-                <div>
-                            <p>Certain images, logos, pictures, and other works 
-                            originating with organizations other than Havoc-OS 
-                            may be or are the trademarks and/or servicemarks of 
-                            those other organizations and are subject to the laws 
-                            of their registered countries. Havoc-OS’ usage 
-                            constitutes a ‘fair use’ of any such copyrighted 
-                            material as provided for in section 107 of the US 
-                            Copyright Law. If you wish to use copyrighted material
-                             from this site for purposes of your own that go 
-                             beyond ‘fair use’, you must obtain permission 
-                            from the copyright owner. Requests for removal of 
-                            copyright material may be sent to </p>
-                            <h5 style="color: #1A73E8">anushekprasal@gmail.com</h5>
-                    </div>
-            </div>
-        </section>
-
-        <!-- social media start -->
-        <section id="social-media">
-            <div class="container">
-                <p class="social-title text-center wow animate__fadeIn">FIND US</p>
-                <div class="row text-center">
-                    <div class="col-4 my-3 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <a target="_blank" href="https://github.com/Havoc-OS"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="col-4 my-3 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <a target="_blank" href="https://t.me/havocofficial"><i class="fa fa-telegram" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="col-4 my-3 wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <a target="_blank" href="https://paypal.me/ANUSHEK"><i class="fa fa-paypal" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- social media end  -->
-
-        <!-- footer section start -->
-        <section id="footer">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-sm-12 my-3">
-                        <h6>&copy; 2020 <b>Havoc OS</b>
+    <!-- footer section start -->
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12 my-3">
+                    <h6>&copy; 2020 <b>Havoc OS</b>
                         </br>Website Designed By : <a href="">Ronax</a></br>
                         </br><a href="pp.html">Privacy Policy</a>
                         <a href="tou.html" style="padding-left: 15px;">Terms of Use</a>
-                        </h6>
-                    </div>
+                    </h6>
                 </div>
             </div>
-        </section>
-        <!-- footer section end  -->
-		<button class="wow animate__fadeInRight" onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+        </div>
+    </section>
+    <!-- footer section end  -->
+    <button class="wow animate__fadeInRight" onclick="topFunction()" id="back-to-top" title="Go to top"><i
+            class="fa fa-chevron-up"></i></button>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
-	<script src="assets/lib/wow/wow.min.js"></script>
-	<script src="assets/lib/back_to_top/back_to_top.js"></script>
+    <script src="assets/lib/wow/wow.min.js"></script>
+    <script src="assets/lib/back_to_top/back_to_top.js"></script>
     <script src="assets/js/wow_init.js"></script>
     <script>
-        window.addEventListener('load',function(){
-  document.querySelector('body').classList.add("loaded")  
-});
-    </script>		
-    </body>
+        window.addEventListener('load', function () {
+            document.querySelector('body').classList.add("loaded")
+        });
+    </script>
+</body>
+
 </html>
