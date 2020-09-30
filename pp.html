@@ -67,6 +67,11 @@
     </section>
 
     <!-- navbar end  -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
 
     <!-- banner start  -->
 
@@ -289,5 +294,10 @@
     <script src="assets/lib/back_to_top/back_to_top.js"></script>
 
     <script src="assets/js/wow_init.js"></script>
+    <script>
+      window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
+    </script>
   </body>
 </html>
