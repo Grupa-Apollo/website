@@ -53,12 +53,12 @@ var onPageLoad = function () {
                 <i class="fa fa-check-circle" aria-hidden="true"></i> Build Date: ${unixTime(datetime)}
             </p>
             <div>
-                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#${codename}Modal">Download Info</button>
-                <div class="modal modal-fullscreen fade" id="${codename}Modal" tabindex="-1" aria-labelledby="${codename}ModalLabel" aria-hidden="true">
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#${codename}">Download Info</button>
+                <div class="modal modal-fullscreen fade" id="${codename}" tabindex="-1" aria-labelledby="${codename}ModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="${codename}ModalLabel"><b>${name}</b></h5>
+                                <h5 class="modal-title" id="${codename}ModalLabel"><b>${name} (${codename})</b></h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -134,12 +134,12 @@ var onPageLoad = function () {
                 <i class="fa fa-check-circle" aria-hidden="true"></i> Build Date: ${unixTime(datetime)}
             </p>
             <div>
-                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#${codename}Modal">Download Info</button>
-                <div class="modal modal-fullscreen fade" id="${codename}Modal" tabindex="-1" aria-labelledby="${codename}ModalLabel" aria-hidden="true">
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#${codename}">Download Info</button>
+                <div class="modal modal-fullscreen fade" id="${codename}" tabindex="-1" aria-labelledby="${codename}ModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="${codename}ModalLabel"><b>${name}</b></h5>
+                                <h5 class="modal-title" id="${codename}ModalLabel"><b>${name} (${codename})</b></h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -214,8 +214,8 @@ var onPageLoad = function () {
                 <i class="fa fa-check-circle" aria-hidden="true"></i> Build Date: ${unixTime(datetime)}
             </p>
             <div>
-                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#${codename}Modal">Download Info</button>
-                <div class="modal modal-fullscreen fade" id="${codename}Modal" tabindex="-1" aria-labelledby="${codename}ModalLabel" aria-hidden="true">
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#${codename}">Download Info</button>
+                <div class="modal modal-fullscreen fade" id="${codename}" tabindex="-1" aria-labelledby="${codename}ModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
