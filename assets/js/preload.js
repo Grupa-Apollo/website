@@ -6,6 +6,10 @@
      }
  }
  window.addEventListener('load', function () {
-     wait(4000);
-     document.querySelector('body').classList.add("loaded")
+     loding();
  });
+
+function loding() {
+    document.querySelector('body').classList.add("loaded");
+    wait(4000);
+}
