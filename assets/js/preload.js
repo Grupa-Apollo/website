@@ -11,5 +11,5 @@
 
 function loding() {
     document.querySelector('body').classList.add("loaded");
-    wait(4000);
+    wait(10000);
 }
