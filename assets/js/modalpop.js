@@ -15,5 +15,5 @@ $(window).on('load', function () {
     var search = '#' + helper.getDocumentHash(value);
     setTimeout(function () {
         $(search).modal('show');
-    }, 4000);
+    }, 5000);
 });
