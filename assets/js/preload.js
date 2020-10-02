@@ -10,6 +10,6 @@
  });
 
  function loding() {
+     wait(4000);
      document.querySelector('body').classList.add("loaded");
-     wait(10000);
  }
