@@ -10,7 +10,7 @@
     };
 })(this.helper = this.helper || {}, jQuery);
 
-$(window).on('load', function() {
+$(window).on('load', function () {
     var value = window.location.href;
     var search = '#' + helper.getDocumentHash(value);
     setTimeout(function () {

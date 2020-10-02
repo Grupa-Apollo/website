@@ -9,7 +9,7 @@
      loding();
  });
 
-function loding() {
-    document.querySelector('body').classList.add("loaded");
-    wait(10000);
-}
+ function loding() {
+     document.querySelector('body').classList.add("loaded");
+     wait(10000);
+ }
