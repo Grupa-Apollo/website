@@ -5,5 +5,5 @@
  function loding() {
      setTimeout(function () {
          document.querySelector('body').classList.add("loaded");
-     }, 4000);
+     }, 1000);
  }
