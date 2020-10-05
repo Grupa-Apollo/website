@@ -1,1 +1,22 @@
-var swiper=new Swiper(".swiper-container",{effect:"coverflow",grabCursor:!0,centeredSlides:!0,slidesPerView:"auto",loop:!0,autoplay:{delay:2500,disableOnInteraction:!1},coverflowEffect:{rotate:0,stretch:0,depth:100,modifier:2,slideShadows:!0},pagination:{el:".swiper-pagination",dynamicBullets:!0}});
+var swiper = new Swiper(".swiper-container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+});

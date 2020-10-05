@@ -1,1 +1,261 @@
-var sourceforge="https://sourceforge.net/projects/havoc-os/files/",updatedb="https://raw.githubusercontent.com/Havoc-OS/OTA/ten";function unixTime(e){var a=new Date(1e3*e);return a.getUTCFullYear()+"-"+("0"+(a.getUTCMonth()+1)).slice(-2)+"-"+("0"+a.getUTCDate()).slice(-2)}var onPageLoad=function(){setTimeout(function(){document.querySelector("body").classList.add("loaded")},1e3),document.querySelectorAll("div[data-device]").forEach(e=>{var a=e.getAttribute("data-device");fetch(updatedb+"/vanilla/"+a+".json").then(function(e){return e.json()}).then(function(a){!function(a){var n=a.response[0].filename,i=a.response[0].oem,s=a.response[0].name,t=a.response[0].codename,d=a.response[0].version,r=(a.response[0].rometype,a.response[0].maintainer),l=a.response[0].url,o=a.response[0].group,c=a.response[0].datetime,b=a.response[0].size;a.response[0].id;e.getElementsByClassName("device-info")[0].innerHTML=`\n            <div class="card" style="background: #ffffff;">\n                        \n\t\t          <div class="card-body device-card">\n    <div>\n        <div class="card-header">\n            ${s}\n        </div>\n    </div>\n    <div class="row no-gutters">\n        <div class="col-auto my-3">\n          <div class="img-box">\n            <img src="assets/img/devices/${t}.png" alt="" />\n          </div>\n        </div>\n        <div class="col my-2">\n            <p class="card-text">\n                <i class="fa fa-code" aria-hidden="true"></i> Codename: ${t} <br />\n                <i class="fa fa-check-circle" aria-hidden="true"></i> Build Date: ${unixTime(c)}\n            </p>\n            <div>\n                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#${t}">Download Info</button>\n                <div class="modal modal-fullscreen fade" id="${t}" tabindex="-1" aria-labelledby="${t}ModalLabel" aria-hidden="true">\n                    <div class="modal-dialog">\n                        <div class="modal-content">\n                            <div class="modal-header">\n                                <h5 class="modal-title" id="${t}ModalLabel"><b>${s} (${t})</b></h5>\n                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n                                    <span aria-hidden="true">&times;</span>\n                                </button>\n                            </div>\n                            <div class="modal-body">\n                                <img src="assets/img/devices/${t}.png" class="img-fluid" width="180" alt="" />\n                                <p class="modal-text mt-3">\n                                    <i class="fa fa-building" aria-hidden="true"></i> <b>OEM</b> : ${i} </br>\n                                    <i class="fa fa-tablet" aria-hidden="true"></i> <b>Name</b> : ${s} </br>\n                                    <i class="fa fa-code" aria-hidden="true"></i> <b>Codename</b> : ${t} </br>\n                                    <i class="fa fa-user-circle" aria-hidden="true"></i> <b>Maintainer</b> : ${r} </br>\n                                    <i class="fa fa-tags" aria-hidden="true"></i> <b>Version</b> : ${d} </br>\n                                    <i class="fa fa-check-circle" aria-hidden="true"></i> <b>Build Date</b> : ${unixTime(c)} </br>\n                                    <i class="fa fa-server" aria-hidden="true"></i> <b>Size</b> : ${(b/1048567).toFixed(2)} Mb </br>\n                                </p>\n                                <img src="https://img.shields.io/sourceforge/dt/Havoc-OS/${t}/${n}.svg" class="mb-3" alt="data" /></br>\n                                <a target="_blank" href="${l}" type="button" class="btn text-white btn-sm mb-3 btn-dl"><i class="fa fa-download" aria-hidden="true"></i> Download</a></br>\n                                <a target="_blank" href="${o}" type="button" class="btn text-white btn-sm btn-tg"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a>\n                                <a target="_blank" href="https://sourceforge.net/projects/havoc-os/files/${t}/" type="button" class="btn text-white btn-sm btn-of"><i class="fa fa-folder" aria-hidden="true"></i> Old Files</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n</div>`}(a)}).catch(function(e){console.log("error: "+e)})}),document.querySelectorAll("div[gapps-device]").forEach(e=>{var a=e.getAttribute("gapps-device");fetch(updatedb+"/gapps/"+a+".json").then(function(e){return e.json()}).then(function(a){!function(a){var n=a.response[0].filename,i=a.response[0].oem,s=a.response[0].name,t=a.response[0].codename,d=a.response[0].version,r=(a.response[0].rometype,a.response[0].maintainer),l=a.response[0].url,o=a.response[0].group,c=a.response[0].datetime,b=a.response[0].size;a.response[0].id;e.getElementsByClassName("device-info")[0].innerHTML=`\n            <div class="card" style="background: #ffffff;">\n                        \n\t\t          <div class="card-body device-card">\n    <div>\n        <div class="card-header">\n            ${s}\n        </div>\n    </div>\n    <div class="row no-gutters">\n        <div class="col-auto my-3">\n        <div class="img-box">\n            <img src="assets/img/devices/${t}.png" width="80" alt="" />\n        </div>\n        </div>\n        <div class="col my-2">\n            <p class="card-text">\n                <i class="fa fa-code" aria-hidden="true"></i> Codename: ${t} <br />\n                <i class="fa fa-check-circle" aria-hidden="true"></i> Build Date: ${unixTime(c)}\n            </p>\n            <div>\n                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#${t}">Download Info</button>\n                <div class="modal modal-fullscreen fade" id="${t}" tabindex="-1" aria-labelledby="${t}ModalLabel" aria-hidden="true">\n                    <div class="modal-dialog">\n                        <div class="modal-content">\n                            <div class="modal-header">\n                                <h5 class="modal-title" id="${t}ModalLabel"><b>${s} (${t})</b></h5>\n                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n                                    <span aria-hidden="true">&times;</span>\n                                </button>\n                            </div>\n                            <div class="modal-body">\n                                <img src="assets/img/devices/${t}.png" class="img-fluid" width="180" alt="" />\n                                <p class="modal-text mt-3">\n                                    <i class="fa fa-building" aria-hidden="true"></i> <b>OEM</b> : ${i} </br>\n                                    <i class="fa fa-tablet" aria-hidden="true"></i> <b>Name</b> : ${s} </br>\n                                    <i class="fa fa-code" aria-hidden="true"></i> <b>Codename</b> : ${t} </br>\n                                    <i class="fa fa-user-circle" aria-hidden="true"></i> <b>Maintainer</b> : ${r} </br>\n                                    <i class="fa fa-tags" aria-hidden="true"></i> <b>Version</b> : ${d} </br>\n                                    <i class="fa fa-check-circle" aria-hidden="true"></i> <b>Build Date</b> : ${unixTime(c)} </br>\n                                    <i class="fa fa-server" aria-hidden="true"></i> <b>Size</b> : ${(b/1048567).toFixed(2)} Mb </br>\n                                </p>\n                                <img src="https://img.shields.io/sourceforge/dt/Havoc-OS/${t}/${n}.svg" class="mb-3" alt="data" /></br>\n                                <a target="_blank" href="${l}" type="button" class="btn text-white btn-sm mb-3 btn-dl"><i class="fa fa-download" aria-hidden="true"></i> Download</a></br>\n                                <a target="_blank" href="${o}" type="button" class="btn text-white btn-sm btn-tg"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a>\n                                <a target="_blank" href="https://sourceforge.net/projects/havoc-os/files/${t}/" type="button" class="btn text-white btn-sm btn-of"><i class="fa fa-folder" aria-hidden="true"></i> Old Files</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n</div>`}(a)}).catch(function(e){console.log("error: "+e)})}),document.querySelectorAll("div[data-lgg6]").forEach(e=>{var a=e.getAttribute("data-lgg6");fetch(updatedb+"/vanilla/"+a+".json").then(function(e){return e.json()}).then(function(a){!function(a){var n=a.response[0].filename,i=a.response[0].oem,s=a.response[0].name,t=a.response[0].codename,d=a.response[0].version,r=(a.response[0].rometype,a.response[0].maintainer),l=a.response[0].url,o=a.response[0].group,c=a.response[0].datetime,b=a.response[0].size;a.response[0].id;e.getElementsByClassName("device-info")[0].innerHTML=`\n            <div class="card" style="background: #ffffff;">\n\t\t          <div class="card-body device-card">\n    <div>\n        <div class="card-header">\n            LG G6 (${s})\n        </div>\n    </div>\n    <div class="row no-gutters">\n        <div class="col-auto my-3">\n        <div class="img-box">\n            <img src="assets/img/devices/lucye.png" width="85" alt="" />\n        </div>\n        </div>\n        <div class="col my-2">\n            <p class="card-text">\n                <i class="fa fa-code" aria-hidden="true"></i> Codename: ${t} <br />\n                <i class="fa fa-check-circle" aria-hidden="true"></i> Build Date: ${unixTime(c)}\n            </p>\n            <div>\n                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#${t}">Download Info</button>\n                <div class="modal modal-fullscreen fade" id="${t}" tabindex="-1" aria-labelledby="${t}ModalLabel" aria-hidden="true">\n                    <div class="modal-dialog">\n                        <div class="modal-content">\n                            <div class="modal-header">\n                                <h5 class="modal-title" id="${t}ModalLabel"><b>LG G6 (${s})</b></h5>\n                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n                                    <span aria-hidden="true">&times;</span>\n                                </button>\n                            </div>\n                            <div class="modal-body">\n                                <img src="assets/img/devices/lucye.png" class="img-fluid" width="180" alt="" />\n                                <p class="modal-text mt-3">\n                                    <i class="fa fa-building" aria-hidden="true"></i> <b>OEM</b> : ${i} </br>\n                                    <i class="fa fa-tablet" aria-hidden="true"></i> <b>Name</b> : ${s} </br>\n                                    <i class="fa fa-code" aria-hidden="true"></i> <b>Codename</b> : ${t} </br>\n                                    <i class="fa fa-user-circle" aria-hidden="true"></i> <b>Maintainer</b> : ${r} </br>\n                                    <i class="fa fa-tags" aria-hidden="true"></i> <b>Version</b> : ${d} </br>\n                                    <i class="fa fa-check-circle" aria-hidden="true"></i> <b>Build Date</b> : ${unixTime(c)} </br>\n                                    <i class="fa fa-server" aria-hidden="true"></i> <b>Size</b> : ${(b/1048567).toFixed(2)} Mb </br>\n                                </p>\n                                <img src="https://img.shields.io/sourceforge/dt/Havoc-OS/lucye/${n}.svg" class="mb-3" alt="data" /></br>\n                                <a target="_blank" href="${l}" type="button" class="btn text-white btn-sm mb-3 btn-dl"><i class="fa fa-download" aria-hidden="true"></i> Download</a></br>\n                                <a target="_blank" href="${o}" type="button" class="btn text-white btn-sm btn-tg"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a>\n                                <a target="_blank" href="https://sourceforge.net/projects/havoc-os/files/lucye/" type="button" class="btn text-white btn-sm btn-of"><i class="fa fa-folder" aria-hidden="true"></i> Old Files</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    </div>\n</div>`}(a)}).catch(function(e){console.log("error: "+e)})})};window.addEventListener("load",onPageLoad);
+var sourceforge = "https://sourceforge.net/projects/havoc-os/files/";
+var updatedb = "https://raw.githubusercontent.com/Havoc-OS/OTA/ten";
+
+function unixTime(unixtime) {
+    var u = new Date(unixtime * 1000);
+    return u.getUTCFullYear() +
+        '-' + ('0' + (u.getUTCMonth() + 1)).slice(-2) +
+        '-' + ('0' + u.getUTCDate()).slice(-2)
+};
+var onPageLoad = function () {
+    document.querySelectorAll("div[data-device]").forEach(el => {
+        var devData = el.getAttribute("data-device");
+        fetch(updatedb + "/" + "vanilla" + "/" + devData + ".json")
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+
+        function appendData(data) {
+            var file = data.response[0].filename;
+            var oem = data.response[0].oem;
+            var name = data.response[0].name;
+            var codename = data.response[0].codename;
+            var version = data.response[0].version;
+            var romtype = data.response[0].rometype;
+            var maintainer = data.response[0].maintainer;
+            var dl = data.response[0].url;
+            var group = data.response[0].group;
+            var datetime = data.response[0].datetime;
+            var size = data.response[0].size;
+            var id = data.response[0].id;
+            el.getElementsByClassName("device-info")[0].innerHTML = `
+            <div class="card" style="background: #ffffff;">
+                        
+		          <div class="card-body device-card">
+    <div>
+        <div class="card-header">
+            ${name}
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-auto my-3">
+          <div class="img-box">
+            <img src="assets/img/devices/${codename}.png" alt="" />
+          </div>
+        </div>
+        <div class="col my-2">
+            <p class="card-text">
+                <i class="fa fa-code" aria-hidden="true"></i> Codename: ${codename} <br />
+                <i class="fa fa-check-circle" aria-hidden="true"></i> Build Date: ${unixTime(datetime)}
+            </p>
+            <div>
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#${codename}">Download Info</button>
+                <div class="modal modal-fullscreen fade" id="${codename}" tabindex="-1" aria-labelledby="${codename}ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="${codename}ModalLabel"><b>${name} (${codename})</b></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/img/devices/${codename}.png" class="img-fluid" width="180" alt="" />
+                                <p class="modal-text mt-3">
+                                    <i class="fa fa-building" aria-hidden="true"></i> <b>OEM</b> : ${oem} </br>
+                                    <i class="fa fa-tablet" aria-hidden="true"></i> <b>Name</b> : ${name} </br>
+                                    <i class="fa fa-code" aria-hidden="true"></i> <b>Codename</b> : ${codename} </br>
+                                    <i class="fa fa-user-circle" aria-hidden="true"></i> <b>Maintainer</b> : ${maintainer} </br>
+                                    <i class="fa fa-tags" aria-hidden="true"></i> <b>Version</b> : ${version} </br>
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i> <b>Build Date</b> : ${unixTime(datetime)} </br>
+                                    <i class="fa fa-server" aria-hidden="true"></i> <b>Size</b> : ${(size/1048567).toFixed(2)} Mb </br>
+                                </p>
+                                <img src="https://img.shields.io/sourceforge/dt/Havoc-OS/${codename}/${file}.svg" class="mb-3" alt="data" /></br>
+                                <a target="_blank" href="${dl}" type="button" class="btn text-white btn-sm mb-3 btn-dl"><i class="fa fa-download" aria-hidden="true"></i> Download</a></br>
+                                <a target="_blank" href="${group}" type="button" class="btn text-white btn-sm btn-tg"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a>
+                                <a target="_blank" href="https://sourceforge.net/projects/havoc-os/files/${codename}/" type="button" class="btn text-white btn-sm btn-of"><i class="fa fa-folder" aria-hidden="true"></i> Old Files</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>`;
+        }
+    });
+    document.querySelectorAll("div[gapps-device]").forEach(el => {
+        var devData = el.getAttribute("gapps-device");
+        fetch(updatedb + "/" + "gapps" + "/" + devData + ".json")
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+
+        function appendData(data) {
+            var file = data.response[0].filename;
+            var oem = data.response[0].oem;
+            var name = data.response[0].name;
+            var codename = data.response[0].codename;
+            var version = data.response[0].version;
+            var romtype = data.response[0].rometype;
+            var maintainer = data.response[0].maintainer;
+            var dl = data.response[0].url;
+            var group = data.response[0].group;
+            var datetime = data.response[0].datetime;
+            var size = data.response[0].size;
+            var id = data.response[0].id;
+            el.getElementsByClassName("device-info")[0].innerHTML = `
+            <div class="card" style="background: #ffffff;">
+                        
+		          <div class="card-body device-card">
+    <div>
+        <div class="card-header">
+            ${name}
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-auto my-3">
+        <div class="img-box">
+            <img src="assets/img/devices/${codename}.png" width="80" alt="" />
+        </div>
+        </div>
+        <div class="col my-2">
+            <p class="card-text">
+                <i class="fa fa-code" aria-hidden="true"></i> Codename: ${codename} <br />
+                <i class="fa fa-check-circle" aria-hidden="true"></i> Build Date: ${unixTime(datetime)}
+            </p>
+            <div>
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#${codename}">Download Info</button>
+                <div class="modal modal-fullscreen fade" id="${codename}" tabindex="-1" aria-labelledby="${codename}ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="${codename}ModalLabel"><b>${name} (${codename})</b></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/img/devices/${codename}.png" class="img-fluid" width="180" alt="" />
+                                <p class="modal-text mt-3">
+                                    <i class="fa fa-building" aria-hidden="true"></i> <b>OEM</b> : ${oem} </br>
+                                    <i class="fa fa-tablet" aria-hidden="true"></i> <b>Name</b> : ${name} </br>
+                                    <i class="fa fa-code" aria-hidden="true"></i> <b>Codename</b> : ${codename} </br>
+                                    <i class="fa fa-user-circle" aria-hidden="true"></i> <b>Maintainer</b> : ${maintainer} </br>
+                                    <i class="fa fa-tags" aria-hidden="true"></i> <b>Version</b> : ${version} </br>
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i> <b>Build Date</b> : ${unixTime(datetime)} </br>
+                                    <i class="fa fa-server" aria-hidden="true"></i> <b>Size</b> : ${(size/1048567).toFixed(2)} Mb </br>
+                                </p>
+                                <img src="https://img.shields.io/sourceforge/dt/Havoc-OS/${codename}/${file}.svg" class="mb-3" alt="data" /></br>
+                                <a target="_blank" href="${dl}" type="button" class="btn text-white btn-sm mb-3 btn-dl"><i class="fa fa-download" aria-hidden="true"></i> Download</a></br>
+                                <a target="_blank" href="${group}" type="button" class="btn text-white btn-sm btn-tg"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a>
+                                <a target="_blank" href="https://sourceforge.net/projects/havoc-os/files/${codename}/" type="button" class="btn text-white btn-sm btn-of"><i class="fa fa-folder" aria-hidden="true"></i> Old Files</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>`;
+        }
+    });
+    document.querySelectorAll("div[data-lgg6]").forEach(el => {
+        var g6Data = el.getAttribute("data-lgg6");
+        fetch(updatedb + "/" + "vanilla" + "/" + g6Data + ".json")
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+
+        function appendData(data) {
+            var file = data.response[0].filename;
+            var oem = data.response[0].oem;
+            var name = data.response[0].name;
+            var codename = data.response[0].codename;
+            var version = data.response[0].version;
+            var romtype = data.response[0].rometype;
+            var maintainer = data.response[0].maintainer;
+            var dl = data.response[0].url;
+            var group = data.response[0].group;
+            var datetime = data.response[0].datetime;
+            var size = data.response[0].size;
+            var id = data.response[0].id;
+            el.getElementsByClassName("device-info")[0].innerHTML = `
+            <div class="card" style="background: #ffffff;">
+		          <div class="card-body device-card">
+    <div>
+        <div class="card-header">
+            LG G6 (${name})
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-auto my-3">
+        <div class="img-box">
+            <img src="assets/img/devices/lucye.png" width="85" alt="" />
+        </div>
+        </div>
+        <div class="col my-2">
+            <p class="card-text">
+                <i class="fa fa-code" aria-hidden="true"></i> Codename: ${codename} <br />
+                <i class="fa fa-check-circle" aria-hidden="true"></i> Build Date: ${unixTime(datetime)}
+            </p>
+            <div>
+                <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#${codename}">Download Info</button>
+                <div class="modal modal-fullscreen fade" id="${codename}" tabindex="-1" aria-labelledby="${codename}ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="${codename}ModalLabel"><b>LG G6 (${name})</b></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/img/devices/lucye.png" class="img-fluid" width="180" alt="" />
+                                <p class="modal-text mt-3">
+                                    <i class="fa fa-building" aria-hidden="true"></i> <b>OEM</b> : ${oem} </br>
+                                    <i class="fa fa-tablet" aria-hidden="true"></i> <b>Name</b> : ${name} </br>
+                                    <i class="fa fa-code" aria-hidden="true"></i> <b>Codename</b> : ${codename} </br>
+                                    <i class="fa fa-user-circle" aria-hidden="true"></i> <b>Maintainer</b> : ${maintainer} </br>
+                                    <i class="fa fa-tags" aria-hidden="true"></i> <b>Version</b> : ${version} </br>
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i> <b>Build Date</b> : ${unixTime(datetime)} </br>
+                                    <i class="fa fa-server" aria-hidden="true"></i> <b>Size</b> : ${(size/1048567).toFixed(2)} Mb </br>
+                                </p>
+                                <img src="https://img.shields.io/sourceforge/dt/Havoc-OS/lucye/${file}.svg" class="mb-3" alt="data" /></br>
+                                <a target="_blank" href="${dl}" type="button" class="btn text-white btn-sm mb-3 btn-dl"><i class="fa fa-download" aria-hidden="true"></i> Download</a></br>
+                                <a target="_blank" href="${group}" type="button" class="btn text-white btn-sm btn-tg"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a>
+                                <a target="_blank" href="https://sourceforge.net/projects/havoc-os/files/lucye/" type="button" class="btn text-white btn-sm btn-of"><i class="fa fa-folder" aria-hidden="true"></i> Old Files</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>`;
+        }
+    });
+};
+
+window.addEventListener("load", onPageLoad);
