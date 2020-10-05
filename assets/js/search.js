@@ -1,14 +1,1 @@
-$.expr[":"].contains = $.expr.createPseudo(function(arg) {
-    return function( elem ) {
-        return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
-    };
-});
-$(document).ready(function () {
-    $("#search-d").on("keyup", function () {
-        var search = $(this).val();
-        $(".device-sec").show();
-        $(".mx-auto").show();
-        if (search) $(".device-sec").not(":contains(" + search + ")").hide();
-        if (search) $(".mx-auto").not(":contains(" + search + ")").hide();
-    });
-});
+$.expr[":"].contains=$.expr.createPseudo(function(e){return function(n){return $(n).text().toUpperCase().indexOf(e.toUpperCase())>=0}}),$(document).ready(function(){$("#search-d").on("keyup",function(){var e=$(this).val();$(".device-sec").show(),$(".mx-auto").show(),e&&$(".device-sec").not(":contains("+e+")").hide(),e&&$(".mx-auto").not(":contains("+e+")").hide()})});
