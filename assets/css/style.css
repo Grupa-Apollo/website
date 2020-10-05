@@ -27,6 +27,12 @@ hr {
     background: #1A73E8;
 }
 
+.navbar-brand img {
+    height: 38px;
+    padding-bottom: 4px;
+    margin-right: 10px;
+}
+
 .navbar-nav .active:hover {
     background: white;
     color: #1A73E8 !important;
@@ -126,6 +132,11 @@ hr {
     padding-bottom: 60px;
 }
 
+#team .card {
+    width: 24rem;
+    height: 9rem;
+}
+
 .section-title::before {
     content: '';
     background: #1A73E8;
@@ -190,6 +201,7 @@ hr {
 
 .card {
     width: 22rem;
+    background: white;
     margin: auto auto;
     border-radius: 8px;
     text-align: center;
@@ -197,6 +209,21 @@ hr {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     padding: 0.5rem;
+}
+
+.feature-card {
+    width: 20rem;
+}
+
+.feature-card img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.card-header {
+    color: #e2f3f5;
+    font-weight: 700;
+    background: #1a73e8;
 }
 
 .card-title {
@@ -214,8 +241,29 @@ hr {
     padding: 0.75rem;
 }
 
+.device-card .card-text {
+    color: #263238;
+}
+
+.device-card .img-box {
+    height: 100%;
+    width: 80px;
+    /*overflow: hidden;*/
+}
+
+.device-card .img-box img {
+    max-height: 100%;
+    height: 85px;
+    width: auto;
+}
+
 .card:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
+}
+
+.modal-text {
+    font-size: 16px;
+    color: #263238;
 }
 
 #download {
@@ -225,12 +273,6 @@ hr {
 
 #download a {
     text-decoration: none;
-}
-
-#download img {
-    height: 400px;
-    width: 600px;
-    display: cover;
 }
 
 #download .download-title {
@@ -245,6 +287,11 @@ hr {
     color: #132845;
 }
 
+#download h4 {
+    margin-top: 10px;
+    color: #1A73E8;
+}
+
 .btn {
     background: white;
     color: #1A73E8;
@@ -254,6 +301,18 @@ hr {
 .btn:hover {
     background: #1A73E8;
     color: white;
+}
+
+.btn-dl {
+    background: #1a73e8;
+}
+
+.btn-tg {
+    background: #0088cc;
+}
+
+.btn-of {
+    background: #263238;
 }
 
 #legal {

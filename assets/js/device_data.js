@@ -39,16 +39,18 @@ var onPageLoad = function () {
                         
 		          <div class="card-body device-card">
     <div>
-        <div class="card-header" style="color: #e2f3f5; font-weight: 700; background: #1a73e8;">
+        <div class="card-header">
             ${name}
         </div>
     </div>
     <div class="row no-gutters">
         <div class="col-auto my-3">
-            <img src="assets/img/devices/${codename}.png" class="img-fluid" width="80" alt="" />
+          <div class="img-box">
+            <img src="assets/img/devices/${codename}.png" alt="" />
+          </div>
         </div>
         <div class="col my-2">
-            <p class="card-text" style="color: #263238;">
+            <p class="card-text">
                 <i class="fa fa-code" aria-hidden="true"></i> Codename: ${codename} <br />
                 <i class="fa fa-check-circle" aria-hidden="true"></i> Build Date: ${unixTime(datetime)}
             </p>
@@ -65,7 +67,7 @@ var onPageLoad = function () {
                             </div>
                             <div class="modal-body">
                                 <img src="assets/img/devices/${codename}.png" class="img-fluid" width="180" alt="" />
-                                <p class="card-text mt-3" style="color: #263238;">
+                                <p class="modal-text mt-3">
                                     <i class="fa fa-building" aria-hidden="true"></i> <b>OEM</b> : ${oem} </br>
                                     <i class="fa fa-tablet" aria-hidden="true"></i> <b>Name</b> : ${name} </br>
                                     <i class="fa fa-code" aria-hidden="true"></i> <b>Codename</b> : ${codename} </br>
@@ -75,9 +77,9 @@ var onPageLoad = function () {
                                     <i class="fa fa-server" aria-hidden="true"></i> <b>Size</b> : ${(size/1048567).toFixed(2)} Mb </br>
                                 </p>
                                 <img src="https://img.shields.io/sourceforge/dt/Havoc-OS/${codename}/${file}.svg" class="mb-3" alt="data" /></br>
-                                <a target="_blank" href="${dl}" type="button" class="btn text-white btn-sm mb-3" style="background: #1a73e8;"><i class="fa fa-download" aria-hidden="true"></i> Download</a></br>
-                                <a target="_blank" href="${group}" type="button" class="btn text-white btn-sm" style="background: #0088cc;"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a>
-                                <a target="_blank" href="https://sourceforge.net/projects/havoc-os/files/${codename}/" type="button" class="btn text-white btn-sm" style="background: #263238;"><i class="fa fa-folder" aria-hidden="true"></i> Old Files</a>
+                                <a target="_blank" href="${dl}" type="button" class="btn text-white btn-sm mb-3 btn-dl"><i class="fa fa-download" aria-hidden="true"></i> Download</a></br>
+                                <a target="_blank" href="${group}" type="button" class="btn text-white btn-sm btn-tg"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a>
+                                <a target="_blank" href="https://sourceforge.net/projects/havoc-os/files/${codename}/" type="button" class="btn text-white btn-sm btn-of"><i class="fa fa-folder" aria-hidden="true"></i> Old Files</a>
                             </div>
                         </div>
                     </div>
@@ -120,16 +122,18 @@ var onPageLoad = function () {
                         
 		          <div class="card-body device-card">
     <div>
-        <div class="card-header" style="color: #e2f3f5; font-weight: 700; background: #1a73e8;">
+        <div class="card-header">
             ${name}
         </div>
     </div>
     <div class="row no-gutters">
         <div class="col-auto my-3">
-            <img src="assets/img/devices/${codename}.png" class="img-fluid" width="80" alt="" />
+        <div class="img-box">
+            <img src="assets/img/devices/${codename}.png" width="80" alt="" />
+        </div>
         </div>
         <div class="col my-2">
-            <p class="card-text" style="color: #263238;">
+            <p class="card-text">
                 <i class="fa fa-code" aria-hidden="true"></i> Codename: ${codename} <br />
                 <i class="fa fa-check-circle" aria-hidden="true"></i> Build Date: ${unixTime(datetime)}
             </p>
@@ -146,7 +150,7 @@ var onPageLoad = function () {
                             </div>
                             <div class="modal-body">
                                 <img src="assets/img/devices/${codename}.png" class="img-fluid" width="180" alt="" />
-                                <p class="card-text mt-3" style="color: #263238;">
+                                <p class="modal-text mt-3">
                                     <i class="fa fa-building" aria-hidden="true"></i> <b>OEM</b> : ${oem} </br>
                                     <i class="fa fa-tablet" aria-hidden="true"></i> <b>Name</b> : ${name} </br>
                                     <i class="fa fa-code" aria-hidden="true"></i> <b>Codename</b> : ${codename} </br>
@@ -156,9 +160,9 @@ var onPageLoad = function () {
                                     <i class="fa fa-server" aria-hidden="true"></i> <b>Size</b> : ${(size/1048567).toFixed(2)} Mb </br>
                                 </p>
                                 <img src="https://img.shields.io/sourceforge/dt/Havoc-OS/${codename}/${file}.svg" class="mb-3" alt="data" /></br>
-                                <a target="_blank" href="${dl}" type="button" class="btn text-white btn-sm mb-3" style="background: #1a73e8;"><i class="fa fa-download" aria-hidden="true"></i> Download</a></br>
-                                <a target="_blank" href="${group}" type="button" class="btn text-white btn-sm" style="background: #0088cc;"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a>
-                                <a target="_blank" href="https://sourceforge.net/projects/havoc-os/files/${codename}/" type="button" class="btn text-white btn-sm" style="background: #263238;"><i class="fa fa-folder" aria-hidden="true"></i> Old Files</a>
+                                <a target="_blank" href="${dl}" type="button" class="btn text-white btn-sm mb-3 btn-dl"><i class="fa fa-download" aria-hidden="true"></i> Download</a></br>
+                                <a target="_blank" href="${group}" type="button" class="btn text-white btn-sm btn-tg"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a>
+                                <a target="_blank" href="https://sourceforge.net/projects/havoc-os/files/${codename}/" type="button" class="btn text-white btn-sm btn-of"><i class="fa fa-folder" aria-hidden="true"></i> Old Files</a>
                             </div>
                         </div>
                     </div>
@@ -200,16 +204,18 @@ var onPageLoad = function () {
             <div class="card" style="background: #ffffff;">
 		          <div class="card-body device-card">
     <div>
-        <div class="card-header" style="color: #e2f3f5; font-weight: 700; background: #1a73e8;">
+        <div class="card-header">
             LG G6 (${name})
         </div>
     </div>
     <div class="row no-gutters">
         <div class="col-auto my-3">
-            <img src="assets/img/devices/lucye.png" class="img-fluid" width="85" alt="" />
+        <div class="img-box">
+            <img src="assets/img/devices/lucye.png" width="85" alt="" />
+        </div>
         </div>
         <div class="col my-2">
-            <p class="card-text" style="color: #263238;">
+            <p class="card-text">
                 <i class="fa fa-code" aria-hidden="true"></i> Codename: ${codename} <br />
                 <i class="fa fa-check-circle" aria-hidden="true"></i> Build Date: ${unixTime(datetime)}
             </p>
@@ -226,7 +232,7 @@ var onPageLoad = function () {
                             </div>
                             <div class="modal-body">
                                 <img src="assets/img/devices/lucye.png" class="img-fluid" width="180" alt="" />
-                                <p class="card-text mt-3" style="color: #263238;">
+                                <p class="modal-text mt-3">
                                     <i class="fa fa-building" aria-hidden="true"></i> <b>OEM</b> : ${oem} </br>
                                     <i class="fa fa-tablet" aria-hidden="true"></i> <b>Name</b> : ${name} </br>
                                     <i class="fa fa-code" aria-hidden="true"></i> <b>Codename</b> : ${codename} </br>
@@ -236,9 +242,9 @@ var onPageLoad = function () {
                                     <i class="fa fa-server" aria-hidden="true"></i> <b>Size</b> : ${(size/1048567).toFixed(2)} Mb </br>
                                 </p>
                                 <img src="https://img.shields.io/sourceforge/dt/Havoc-OS/lucye/${file}.svg" class="mb-3" alt="data" /></br>
-                                <a target="_blank" href="${dl}" type="button" class="btn text-white btn-sm mb-3" style="background: #1a73e8;"><i class="fa fa-download" aria-hidden="true"></i> Download</a></br>
-                                <a target="_blank" href="${group}" type="button" class="btn text-white btn-sm" style="background: #0088cc;"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a>
-                                <a target="_blank" href="https://sourceforge.net/projects/havoc-os/files/lucye/" type="button" class="btn text-white btn-sm" style="background: #263238;"><i class="fa fa-folder" aria-hidden="true"></i> Old Files</a>
+                                <a target="_blank" href="${dl}" type="button" class="btn text-white btn-sm mb-3 btn-dl"><i class="fa fa-download" aria-hidden="true"></i> Download</a></br>
+                                <a target="_blank" href="${group}" type="button" class="btn text-white btn-sm btn-tg"><i class="fa fa-telegram" aria-hidden="true"></i> Telegram</a>
+                                <a target="_blank" href="https://sourceforge.net/projects/havoc-os/files/lucye/" type="button" class="btn text-white btn-sm btn-of"><i class="fa fa-folder" aria-hidden="true"></i> Old Files</a>
                             </div>
                         </div>
                     </div>
