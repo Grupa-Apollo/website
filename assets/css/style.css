@@ -610,6 +610,11 @@ hr {
     color: #1A73E8;
 }
 
+#d-data h6 {
+    color: #132845;
+    font-size: 20px;
+}
+
 #d-data .card {
     width: auto;
 }
@@ -621,6 +626,7 @@ hr {
 
 .link a {
     text-decoration: none;
+    color: gray;
 }
 
 .link a:hover i {
