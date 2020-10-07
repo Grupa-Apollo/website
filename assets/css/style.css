@@ -623,3 +623,37 @@ hr {
     pointer-events: none;
     color: #1a73e8;
 }
+
+#d-data h2 {
+    font-size: 30px;
+    color: #1A73E8;
+}
+
+#d-data h5 {
+    color: #1A73E8;
+}
+
+#d-data .card {
+    width: auto;
+}
+
+.link i {
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.link a:hover i {
+    transform: translateY(-10px);
+}
+
+.link .fa-archive {
+    color: black;
+}
+
+.link .fa-telegram {
+    color: #0088cc;
+}
