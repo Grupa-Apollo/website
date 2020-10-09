@@ -603,6 +603,7 @@ hr {
 
 #d-data h2 {
     font-size: 30px;
+    font-weight: 600;
     color: #1A73E8;
 }
 
@@ -617,10 +618,26 @@ hr {
 
 #d-data .card {
     width: auto;
+    text-align: left;
+    border-radius: 5px;
+}
+
+#d-data .card-header {
+    color: #1a73e8;
+    font-weight: 600;
+    background: white;
+    padding: 2px;
+    border-bottom: none;
+    text-align: left;
+    padding-left: 15px;
+}
+
+#d-data .card-header:hover {
+    background: whitesmoke;
 }
 
 .link i {
-    font-size: 50px;
+    font-size: 45px;
     transition: 0.5s;
 }
 
