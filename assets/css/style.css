@@ -303,9 +303,7 @@ hr {
     color: white;
 }
 
-.btn-dl {
-    background: #1a73e8;
-}
+
 
 #legal {
     padding: 50px 10px;
@@ -616,10 +614,37 @@ hr {
     font-size: 20px;
 }
 
+#d-data a {
+    color: #000;
+}
+
 #d-data .card {
     width: auto;
     text-align: left;
     border-radius: 5px;
+}
+
+#d-data .card a {
+    text-decoration: solid;
+}
+
+#d-data .card .btn {
+    border: none;
+    background: #1a73e8;
+    color: white;
+}
+
+#d-data .card .btn-bl {
+    background: #263238;
+}
+
+#d-data .card .btn:hover {
+    color: #1a73e8;
+    background: #F0F0F0;
+}
+
+#d-data .card .btn-bl:hover {
+    color: #263238;
 }
 
 #d-data .card-header {
@@ -629,31 +654,9 @@ hr {
     padding: 2px;
     border-bottom: none;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 #d-data .card-header:hover {
     background: whitesmoke;
-}
-
-.link i {
-    font-size: 45px;
-    transition: 0.5s;
-}
-
-.link a {
-    text-decoration: none;
-    color: gray;
-}
-
-.link a:hover i {
-    transform: translateY(-10px);
-}
-
-.link .fa-archive {
-    color: black;
-}
-
-.link .fa-telegram {
-    color: #0088cc;
 }
